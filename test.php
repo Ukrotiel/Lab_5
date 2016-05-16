@@ -8,15 +8,15 @@
     
     echo "Testing database PDO connection...<br>";
     
-    $SECRET = "SaNcha1488"; //  place this in WebApp settings
+    $SECRET = "3c9126da"; //  place this in WebApp settings
     
     
     $connenv = getenv("SQLAZURECONNSTR_defaultConnection");
     parse_str(str_replace(";", "&", $connenv), $connarray);
     
     $connstring = "sqlsrv:Server=".$connarray["Data_Source"].";Database=".$connarray["Initial_Catalog"];
-    $user = $connarray["sanchalex"];
-    $pass = $connarray["SaNcha1488"];
+    $user = $connarray["bff5e106ae53a6"];
+    $pass = $connarray["3c9126da"];
     
     //var_dump($connarray);
     //var_dump($connstring);
